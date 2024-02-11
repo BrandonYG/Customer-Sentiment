@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Result</title>
+        <style>
+        body {
+            font-family: Verdana;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 40px;
+            padding -100px;
+        }
+        .vertical-center {
+            position: absolute;
+            left: 50px;
+            bottom: 50px;
+        }
+        .container1 {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 100px 0;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        button {
+            font-family: Verdana;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="container1">Sentiment Result:</h1>
+    <p class="container">{{ sentiment }}</p>
+        <div class="vertical-center">
+        <button onclick="goBack()">Back</button>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
